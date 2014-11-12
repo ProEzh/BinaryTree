@@ -7,22 +7,41 @@ namespace BinaryTree
 {
     class Tree
     {
-        Node root;
-
-        public Tree() 
+        private Node rootNode_;
+        public Node RootNode
         {
-            root = null;
+            get
+            {
+                retutn rootNode_;
+            }
+            set
+            {
+                rootNode_ = value;
+            }
         }
-
-        public Tree(int initial)
+        
+        
+        public Tree()
         {
-            root = new Node(initial);
+            rootNode_ = null;
         }
-
-        public void AddElement(int value)
+        
+        public Node InsertNodeWithValue(int value)
         {
-            if (root == null)
-                root = new Node(value);
+//          TODO
+        }
+        
+        public void Print()
+        {
+//          TODO
+        }
+        
+        private static void Main()
+        {
+            Tree tree = new Tree();
+            tree.InsertNodeWithValue(1);
+            tree.Print();
+//          TODO OUTPUT: 1
         }
     }
 }
