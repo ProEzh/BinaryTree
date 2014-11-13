@@ -28,7 +28,16 @@ namespace BinaryTree
         
         public Node InsertNodeWithValue(int value)
         {
-//          TODO
+            Node currentNode = rootNode_;
+            for (;;)
+                if (  value > currentNode.GetValue() ) {
+                    if ( currentNode.hasRightNode() ) {
+                        currentNode = currntNode.getRightNode();
+                    }
+                    else {
+                        break;
+                    }
+                }
         }
         
         public void Print()
