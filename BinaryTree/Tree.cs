@@ -32,7 +32,7 @@ namespace BinaryTree
             for (;;) {
                 if (  value > currentNode.GetValue() ) {
                     if ( currentNode.hasRightNode() ) {
-                        currentNode = currntNode.getRightNode();
+                        currentNode = currentNode.getRightNode();
                     }
                     else {
                         break;
