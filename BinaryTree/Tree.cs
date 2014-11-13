@@ -29,7 +29,7 @@ namespace BinaryTree
         public Node InsertNodeWithValue(int value)
         {
             Node currentNode = rootNode_;
-            for (;;)
+            for (;;) {
                 if (  value > currentNode.GetValue() ) {
                     if ( currentNode.hasRightNode() ) {
                         currentNode = currntNode.getRightNode();
@@ -38,6 +38,7 @@ namespace BinaryTree
                         break;
                     }
                 }
+            }
         }
         
         public void Print()
